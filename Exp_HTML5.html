@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Train Information & Enquiry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        article {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid gray;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        input[type="submit"] {
+            background-color: #003366;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Indian Railways - Train Information Portal</h1>
+</header>
+
+<section>
+
+    <article>
+        <h2>Available Trains</h2>
+        <table>
+            <tr>
+                <th>Train No</th>
+                <th>Train Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Departure</th>
+            </tr>
+            <tr>
+                <td>12127</td>
+                <td>Intercity Express</td>
+                <td>Pune</td>
+                <td>Mumbai</td>
+                <td>06:30 AM</td>
+            </tr>
+            <tr>
+                <td>11020</td>
+                <td>Konark Express</td>
+                <td>Pune</td>
+                <td>Delhi</td>
+                <td>04:15 PM</td>
+            </tr>
+            <tr>
+                <td>12779</td>
+                <td>Goa Express</td>
+                <td>Mumbai</td>
+                <td>Goa</td>
+                <td>07:00 AM</td>
+            </tr>
+        </table>
+    </article>
+
+    <article>
+        <h2>Passenger Enquiry Form</h2>
+        <form>
+            <label>Full Name:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" required>
+
+            <label>Select Train:</label>
+            <select>
+                <option>Intercity Express</option>
+                <option>Konark Express</option>
+                <option>Goa Express</option>
+            </select>
+
+            <label>Journey Date:</label>
+            <input type="date" required>
+            <label>Number of Passengers:</label>
+            <input type="number" min="1" max="10">
+
+            <label>Additional Message:</label>Programs based on typography and background properties of CSS3, animation effect by using the transition features of CSS.
+            <textarea rows="4"></textarea>
+
+            <input type="submit" value="Submit Enquiry">
+        </form>
+    </article>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Indian Railways | Designed for Educational Purpose</p>
+</footer>
+
+</body>
+</html>
